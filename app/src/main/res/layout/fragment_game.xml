@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.GameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@drawable/bg_game">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_get_ready"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_ready"
+                    android:textSize="28sp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gamer_left"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/gamer_orange"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/bullet_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bullet_left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gamer_left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.364" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/bullet_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/bullet_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/gamer_right"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.364" />
+
+            <ImageView
+                android:id="@+id/gamer_right"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:src="@drawable/gamer_blue"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shoot_left"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoot"
+                android:paddingVertical="6dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:background="@drawable/bg_rules_orange"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:paddingHorizontal="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_score_left"
+                android:layout_marginVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:paddingVertical="6dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:background="@drawable/bg_rules_orange"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:paddingHorizontal="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_score_right"
+                android:layout_marginVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:paddingVertical="6dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:background="@drawable/bg_rules_blue"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:paddingHorizontal="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_shoot_right"
+                android:layout_marginVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoot"
+                android:layout_marginEnd="40dp"
+                android:paddingVertical="6dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:background="@drawable/bg_rules_blue"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:paddingHorizontal="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tint"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BE000000"/>
+
+
+
+
+
+
+</FrameLayout>

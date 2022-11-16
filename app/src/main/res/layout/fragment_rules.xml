@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    tools:context=".ui.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="40dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center"
+                android:text="Rules"
+                android:textColor="@color/bg"
+                android:textSize="32sp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="24sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="This is a game for two, find a partner and get started.
+Pay attention to the instructions. Get ready and shoot at speed!
+"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_marginHorizontal="56dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/cactus_rules"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/tv_color"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shoot"
+                        android:paddingVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:background="@drawable/bg_rules_orange"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:paddingHorizontal="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:paddingVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:background="@drawable/bg_rules_orange"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:paddingHorizontal="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:paddingVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:background="@drawable/bg_rules_blue"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:paddingHorizontal="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shoot"
+                        android:paddingVertical="6dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:background="@drawable/bg_rules_blue"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:paddingHorizontal="16dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="The one who shoots first wins"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

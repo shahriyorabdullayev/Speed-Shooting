@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shoot">Выстрел</string>
+    <string name="speed_shooting">Speed Shooting</string>
+    <string name="start_game">Старт</string>
+    <string name="account">Аккаунт</string>
+    <string name="who_is_the_best">Кто лучший?</string>
+    <string name="rules">Правила</string>
+    <string name="settings">Настройки</string>
+    <string name="this_is_a_game_for_two_find_a_partner_and_get_started_pay_attention_to_the_instructions_get_ready_and_shoot_at_speed">Это игра для двоих, найди себе напарника и приступай.
+Обрати внимание на указания. Приготовься и стреляй на скорость!
+</string>
+    <string name="the_one_who_shoots_first_wins">Побеждает тот, кто выстрелил первый</string>
+    <string name="best_player">Лучший игрок</string>
+    <string name="get_ready">Приготовься</string>
+    <string name="shooting">Стреляй !</string>
+    <string name="menu">Меню</string>
+    <string name="winner">Победитель!</string>
+</resources>
